@@ -25,9 +25,9 @@ def run():
         
         for spec in settings.SUITE_TO_SPEC_MAPPINGS[suite]:
             skipped_statements = SKIPPED_STATEMENTS[spec]
-            for statement in skipped_statements:
-                if statement['statement'] in spec_statements_copy:
-                    spec_statements_copy.remove(statement['statement'])
+            for entry in skipped_statements:
+                if entry['statement'] in spec_statements_copy:
+                    spec_statements_copy.remove(entry['statement'])
                     
         matched_statements = TestSuiteAnalyser().match_statements(
             suite_statements_copy, spec_statements_copy
