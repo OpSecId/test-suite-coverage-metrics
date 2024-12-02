@@ -41,58 +41,66 @@
                                 <h3 class="card-title">vc-data-model-2.0-test-suite</h3>
                             </div>
                             <div class="card-body">
-                                <div class="row g-2 align-items-center">
-                                    <canvas id="vc-data-model-2.0-test-suite" style="width:50%;max-width:300px"></canvas>
-                                    <script>
-                                        var xValues = [
-                                            "Skipped",
-                                            "Matched",
-                                            "Unmatched"
-                                        ];
-                                        var yValues = [
-                                            6,
-                                        46,
-                                        12
-];
-                                        var barColors = [
-                                            "#b91d47",
-                                            "#00aba9",
-                                            "#2b5797"
-                                        ];
+                                <div class="row">
+                                    <div class="col-6">
+                                        <canvas id="vc-data-model-2.0-test-suite" style="width:50%;max-width:300px"></canvas>
+                                        <script>
+                                            var xValues = [
+                                                "Skipped",
+                                                "Matched",
+                                                "Unmatched"
+                                            ];
+                                            var yValues = [
+                                                6,
+                                                46,
+                                                12
+    ];
+                                            var barColors = [
+                                                "#b91d47",
+                                                "#00aba9",
+                                                "#2b5797"
+                                            ];
 
-                                        new Chart("vc-data-model-2.0-test-suite", {
-                                            type: "pie",
-                                            data: {
-                                                labels: xValues,
-                                                datasets: [{
-                                                    backgroundColor: barColors,
-                                                    data: yValues
-                                                }]
-                                            }
-                                        });
-                                    </script>
-                                </div>
-                                <div class="row g-2 align-items-center">
-                                    <div class="accordion" id="accordion-example">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading-1">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapse-1"
-                                                    aria-expanded="false">
-                                                    Accordion Item #1
-                                                </button>
-                                            </h2>
-                                            <div id="collapse-1" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordion-example" style="">
-                                                <div class="accordion-body pt-0">
-                                                    <strong>This is the first item's accordion body.</strong> It is
-                                                    hidden by default, until the collapse plugin adds the appropriate
-                                                    classes that we use to style each element. These classes control the
-                                                    overall appearance, as well as the showing and hiding via CSS
-                                                    transitions. You can modify any of this with custom CSS or
-                                                    overriding our default variables. It's also worth noting that just
-                                                    about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
+                                            new Chart("vc-data-model-2.0-test-suite", {
+                                                type: "pie",
+                                                data: {
+                                                    labels: xValues,
+                                                    datasets: [{
+                                                        backgroundColor: barColors,
+                                                        data: yValues
+                                                    }]
+                                                }
+                                            });
+                                        </script>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="accordion" id="accordion-example">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-1">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse-unmatched"
+                                                        aria-expanded="false">
+                                                        Unmatched
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse-unmatched" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion-example" style="">
+                                                    <div class="accordion-body pt-0"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion" id="accordion-example">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-1">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse-skipped"
+                                                        aria-expanded="false">
+                                                        Skipped
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse-skipped" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion-example" style="">
+                                                    <div class="accordion-body pt-0"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -108,58 +116,66 @@
                                 <h3 class="card-title">vc-bitstring-status-list-test-suite</h3>
                             </div>
                             <div class="card-body">
-                                <div class="row g-2 align-items-center">
-                                    <canvas id="vc-bitstring-status-list-test-suite" style="width:50%;max-width:300px"></canvas>
-                                    <script>
-                                        var xValues = [
-                                            "Skipped",
-                                            "Matched",
-                                            "Unmatched"
-                                        ];
-                                        var yValues = [
-                                            6,
-                                        25,
-                                        9
-];
-                                        var barColors = [
-                                            "#b91d47",
-                                            "#00aba9",
-                                            "#2b5797"
-                                        ];
+                                <div class="row">
+                                    <div class="col-6">
+                                        <canvas id="vc-bitstring-status-list-test-suite" style="width:50%;max-width:300px"></canvas>
+                                        <script>
+                                            var xValues = [
+                                                "Skipped",
+                                                "Matched",
+                                                "Unmatched"
+                                            ];
+                                            var yValues = [
+                                                6,
+                                                25,
+                                                9
+    ];
+                                            var barColors = [
+                                                "#b91d47",
+                                                "#00aba9",
+                                                "#2b5797"
+                                            ];
 
-                                        new Chart("vc-bitstring-status-list-test-suite", {
-                                            type: "pie",
-                                            data: {
-                                                labels: xValues,
-                                                datasets: [{
-                                                    backgroundColor: barColors,
-                                                    data: yValues
-                                                }]
-                                            }
-                                        });
-                                    </script>
-                                </div>
-                                <div class="row g-2 align-items-center">
-                                    <div class="accordion" id="accordion-example">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading-1">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapse-1"
-                                                    aria-expanded="false">
-                                                    Accordion Item #1
-                                                </button>
-                                            </h2>
-                                            <div id="collapse-1" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordion-example" style="">
-                                                <div class="accordion-body pt-0">
-                                                    <strong>This is the first item's accordion body.</strong> It is
-                                                    hidden by default, until the collapse plugin adds the appropriate
-                                                    classes that we use to style each element. These classes control the
-                                                    overall appearance, as well as the showing and hiding via CSS
-                                                    transitions. You can modify any of this with custom CSS or
-                                                    overriding our default variables. It's also worth noting that just
-                                                    about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
+                                            new Chart("vc-bitstring-status-list-test-suite", {
+                                                type: "pie",
+                                                data: {
+                                                    labels: xValues,
+                                                    datasets: [{
+                                                        backgroundColor: barColors,
+                                                        data: yValues
+                                                    }]
+                                                }
+                                            });
+                                        </script>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="accordion" id="accordion-example">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-1">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse-unmatched"
+                                                        aria-expanded="false">
+                                                        Unmatched
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse-unmatched" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion-example" style="">
+                                                    <div class="accordion-body pt-0"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion" id="accordion-example">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-1">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse-skipped"
+                                                        aria-expanded="false">
+                                                        Skipped
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse-skipped" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion-example" style="">
+                                                    <div class="accordion-body pt-0"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -175,58 +191,66 @@
                                 <h3 class="card-title">vc-di-eddsa-test-suite</h3>
                             </div>
                             <div class="card-body">
-                                <div class="row g-2 align-items-center">
-                                    <canvas id="vc-di-eddsa-test-suite" style="width:50%;max-width:300px"></canvas>
-                                    <script>
-                                        var xValues = [
-                                            "Skipped",
-                                            "Matched",
-                                            "Unmatched"
-                                        ];
-                                        var yValues = [
-                                            6,
-                                        17,
-                                        0
-];
-                                        var barColors = [
-                                            "#b91d47",
-                                            "#00aba9",
-                                            "#2b5797"
-                                        ];
+                                <div class="row">
+                                    <div class="col-6">
+                                        <canvas id="vc-di-eddsa-test-suite" style="width:50%;max-width:300px"></canvas>
+                                        <script>
+                                            var xValues = [
+                                                "Skipped",
+                                                "Matched",
+                                                "Unmatched"
+                                            ];
+                                            var yValues = [
+                                                6,
+                                                17,
+                                                0
+    ];
+                                            var barColors = [
+                                                "#b91d47",
+                                                "#00aba9",
+                                                "#2b5797"
+                                            ];
 
-                                        new Chart("vc-di-eddsa-test-suite", {
-                                            type: "pie",
-                                            data: {
-                                                labels: xValues,
-                                                datasets: [{
-                                                    backgroundColor: barColors,
-                                                    data: yValues
-                                                }]
-                                            }
-                                        });
-                                    </script>
-                                </div>
-                                <div class="row g-2 align-items-center">
-                                    <div class="accordion" id="accordion-example">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading-1">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapse-1"
-                                                    aria-expanded="false">
-                                                    Accordion Item #1
-                                                </button>
-                                            </h2>
-                                            <div id="collapse-1" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordion-example" style="">
-                                                <div class="accordion-body pt-0">
-                                                    <strong>This is the first item's accordion body.</strong> It is
-                                                    hidden by default, until the collapse plugin adds the appropriate
-                                                    classes that we use to style each element. These classes control the
-                                                    overall appearance, as well as the showing and hiding via CSS
-                                                    transitions. You can modify any of this with custom CSS or
-                                                    overriding our default variables. It's also worth noting that just
-                                                    about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
+                                            new Chart("vc-di-eddsa-test-suite", {
+                                                type: "pie",
+                                                data: {
+                                                    labels: xValues,
+                                                    datasets: [{
+                                                        backgroundColor: barColors,
+                                                        data: yValues
+                                                    }]
+                                                }
+                                            });
+                                        </script>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="accordion" id="accordion-example">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-1">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse-unmatched"
+                                                        aria-expanded="false">
+                                                        Unmatched
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse-unmatched" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion-example" style="">
+                                                    <div class="accordion-body pt-0"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion" id="accordion-example">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-1">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse-skipped"
+                                                        aria-expanded="false">
+                                                        Skipped
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse-skipped" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordion-example" style="">
+                                                    <div class="accordion-body pt-0"></div>
                                                 </div>
                                             </div>
                                         </div>
