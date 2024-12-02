@@ -54,7 +54,7 @@
                                                 33,
                                                 46,
                                                 12
-    ];
+                                            ];
                                             var barColors = [
                                                 "#b91d47",
                                                 "#00aba9",
@@ -74,7 +74,7 @@
                                         </script>
                                     </div>
                                     <div class="col-6">
-                                        <div class="accordion" id="accordion-unmatched">
+                                        <div class="accordion" id="accordion-spec-details">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="heading-1">
                                                     <button class="accordion-button collapsed" type="button"
@@ -84,7 +84,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="collapse-unmatched" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordion-unmatched" style="">
+                                                    data-bs-parent="#accordion-spec-details" style="">
                                                     <div class="accordion-body pt-0">
                                                         <div class="list-group list-group-flush list-group-hoverable">
                                                             
@@ -92,7 +92,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">The related normative guidance in Section 4.5 Types MUST be followed.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -101,7 +100,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">One value of this property MUST be VerifiablePresentation, but additional types MAY be included</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -110,7 +108,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">These objects are called verifiable credential graphs and MUST express information that is secured using a securing mechanism</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -119,7 +116,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">The value of the relatedResource property MUST be one or more objects of the following form: Property Description id The identifier for the resource is REQUIRED and conforms to the format defined in Section 4.4 Identifiers</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -128,7 +124,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">type The type property is REQUIRED</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -137,7 +132,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">The associated vocabulary URL MUST be https://www.w3.org/2018/credentials#confidenceMethod.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -146,7 +140,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">The associated vocabulary URL MUST be https://www.w3.org/2018/credentials#renderMethod.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -155,7 +148,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">The verifyProof function MUST implement the interface described in 5.13 Securing Mechanism Specifications.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -164,7 +156,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">The type property MUST be present and its value MUST be a URL identifying the type of problem.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -173,7 +164,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">The title property MUST be present and its value SHOULD provide a short but specific human-readable string for the problem.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -182,7 +172,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">The detail property MUST be present and its value SHOULD provide a longer human-readable string for the problem.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -191,7 +180,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">If such operations are performed and result in an error, the verifiable credential or verifiable presentation MUST result in a verification failure.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -200,9 +188,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion" id="accordion-example">
-                                            <div class="accordion-skipped">
+                                            <div class="accordion-item">
                                                 <h2 class="accordion-header" id="heading-1">
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse-skipped"
@@ -211,7 +197,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="collapse-skipped" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordion-skipped" style="">
+                                                    data-bs-parent="#accordion-spec-details" style="">
                                                     <div class="accordion-body pt-0">
                                                         <div class="list-group list-group-flush list-group-hoverable">
                                                             
@@ -542,7 +528,7 @@
                                                 7,
                                                 25,
                                                 9
-    ];
+                                            ];
                                             var barColors = [
                                                 "#b91d47",
                                                 "#00aba9",
@@ -562,7 +548,7 @@
                                         </script>
                                     </div>
                                     <div class="col-6">
-                                        <div class="accordion" id="accordion-unmatched">
+                                        <div class="accordion" id="accordion-spec-details">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="heading-1">
                                                     <button class="accordion-button collapsed" type="button"
@@ -572,7 +558,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="collapse-unmatched" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordion-unmatched" style="">
+                                                    data-bs-parent="#accordion-spec-details" style="">
                                                     <div class="accordion-body pt-0">
                                                         <div class="list-group list-group-flush list-group-hoverable">
                                                             
@@ -580,7 +566,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">Conforming processors MUST produce errors when non-conforming documents are consumed.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -589,7 +574,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">It MUST NOT be the URL for the status list</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -598,7 +582,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">While the value of the string is arbitrary, the following values MUST be used for their intended purpose: Value Description refresh Used to signal that an updated verifiable credential is available via the credential's refresh service feature</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -607,7 +590,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">If present, the statusMessage property MUST be an array, the length of which MUST equal the number of possible status messages indicated by statusSize (e.g., statusMessage array MUST have 2 elements if statusSize has 1 bit, 4 elements if statusSize has 2 bits, 8 elements if statusSize has 3 bits, etc.)</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -616,7 +598,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">While the value of each string is arbitrary, the following values MUST be used for their intended purpose: Value Description refresh Used to signal that an updated verifiable credential is available via the credential's refresh service feature</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -625,7 +606,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">The status message descriptions MUST be defined in credentialSubject.statusMessages</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -634,7 +614,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">credentialSubject.statusSize MUST be specified when this statusPurpose value is used.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -643,7 +622,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">Data Model whose value is malformed due to not complying with associated 'MUST' statements, a MALFORMED_VALUE_ERROR MUST be raised.</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -652,7 +630,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">If such a feature is supported, and if query parameters are supported by the URL scheme, then the name of the query parameter MUST be timestamp and the value MUST be a valid URL-encoded [XMLSCHEMA11-2] dateTimeStamp string value</a>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -661,9 +638,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion" id="accordion-example">
-                                            <div class="accordion-skipped">
+                                            <div class="accordion-item">
                                                 <h2 class="accordion-header" id="heading-1">
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse-skipped"
@@ -672,7 +647,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="collapse-skipped" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordion-skipped" style="">
+                                                    data-bs-parent="#accordion-spec-details" style="">
                                                     <div class="accordion-body pt-0">
                                                         <div class="list-group list-group-flush list-group-hoverable">
                                                             
@@ -769,7 +744,7 @@
                                                 17,
                                                 17,
                                                 0
-    ];
+                                            ];
                                             var barColors = [
                                                 "#b91d47",
                                                 "#00aba9",
@@ -789,7 +764,7 @@
                                         </script>
                                     </div>
                                     <div class="col-6">
-                                        <div class="accordion" id="accordion-unmatched">
+                                        <div class="accordion" id="accordion-spec-details">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="heading-1">
                                                     <button class="accordion-button collapsed" type="button"
@@ -799,7 +774,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="collapse-unmatched" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordion-unmatched" style="">
+                                                    data-bs-parent="#accordion-spec-details" style="">
                                                     <div class="accordion-body pt-0">
                                                         <div class="list-group list-group-flush list-group-hoverable">
                                                             
@@ -807,9 +782,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion" id="accordion-example">
-                                            <div class="accordion-skipped">
+                                            <div class="accordion-item">
                                                 <h2 class="accordion-header" id="heading-1">
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse-skipped"
@@ -818,7 +791,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="collapse-skipped" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordion-skipped" style="">
+                                                    data-bs-parent="#accordion-spec-details" style="">
                                                     <div class="accordion-body pt-0">
                                                         <div class="list-group list-group-flush list-group-hoverable">
                                                             

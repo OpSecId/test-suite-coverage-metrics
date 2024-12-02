@@ -54,7 +54,7 @@
                                                 {{ suite['skipped_statements']['count'] }},
                                                 {{ suite['matches']['count'] }},
                                                 {{ suite['unmatched_spec_statements']['count'] }}
-    ];
+                                            ];
                                             var barColors = [
                                                 "#b91d47",
                                                 "#00aba9",
@@ -74,7 +74,7 @@
                                         </script>
                                     </div>
                                     <div class="col-6">
-                                        <div class="accordion" id="accordion-unmatched">
+                                        <div class="accordion" id="accordion-spec-details">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="heading-1">
                                                     <button class="accordion-button collapsed" type="button"
@@ -84,7 +84,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="collapse-unmatched" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordion-unmatched" style="">
+                                                    data-bs-parent="#accordion-spec-details" style="">
                                                     <div class="accordion-body pt-0">
                                                         <div class="list-group list-group-flush list-group-hoverable">
                                                             {% for item in suite['unmatched_spec_statements']['list'] %}
@@ -92,7 +92,6 @@
                                                                 <div class="row align-items-center">
                                                                     <div class="col text-truncate">
                                                                         <div class="text-reset d-block">{{ item }}</a>
-                                                                        {# <div class="d-block text-secondary text-truncate mt-n1"></div> #}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -101,9 +100,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="accordion" id="accordion-example">
-                                            <div class="accordion-skipped">
+                                            <div class="accordion-item">
                                                 <h2 class="accordion-header" id="heading-1">
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse-skipped"
@@ -112,7 +109,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="collapse-skipped" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordion-skipped" style="">
+                                                    data-bs-parent="#accordion-spec-details" style="">
                                                     <div class="accordion-body pt-0">
                                                         <div class="list-group list-group-flush list-group-hoverable">
                                                             {% for item in suite['skipped_statements']['list'] %}
