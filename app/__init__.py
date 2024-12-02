@@ -53,7 +53,7 @@ def run():
         template = JinjaReporter().render_template('coverage_metrics', coverage_metrics)
         with open(f"outputs/{suite}.md", "w+") as f:
             f.write(template)
-    template = JinjaReporter().render_template('coverage_graphs', suites)
+    template = JinjaReporter().render_template('components/charts', suites)
     with open("index.html", "w+") as f:
         f.write(template)
 
