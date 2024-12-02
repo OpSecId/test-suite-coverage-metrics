@@ -74,7 +74,7 @@
                                         </script>
                                     </div>
                                     <div class="col-6">
-                                        <div class="accordion" id="accordion-example">
+                                        <div class="accordion" id="accordion-unmatched">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="heading-1">
                                                     <button class="accordion-button collapsed" type="button"
@@ -84,7 +84,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="collapse-unmatched" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordion-example" style="">
+                                                    data-bs-parent="#accordion-unmatched" style="">
                                                     <div class="accordion-body pt-0">
                                                         <div class="list-group list-group-flush list-group-hoverable">
                                                             {% for item in suite['unmatched_spec_statements']['list'] %}
@@ -103,7 +103,7 @@
                                             </div>
                                         </div>
                                         <div class="accordion" id="accordion-example">
-                                            <div class="accordion-item">
+                                            <div class="accordion-skipped">
                                                 <h2 class="accordion-header" id="heading-1">
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse-skipped"
@@ -112,7 +112,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="collapse-skipped" class="accordion-collapse collapse"
-                                                    data-bs-parent="#accordion-example" style="">
+                                                    data-bs-parent="#accordion-skipped" style="">
                                                     <div class="accordion-body pt-0">
                                                         <div class="list-group list-group-flush list-group-hoverable">
                                                             {% for item in suite['skipped_statements']['list'] %}
