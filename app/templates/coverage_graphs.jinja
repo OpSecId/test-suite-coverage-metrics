@@ -7,22 +7,22 @@
 <canvas id="{{ suite['suite'] }}" style="width:100%;max-width:600px"></canvas>
 <script>
 var xValues = [
-    "Specification", 
-    "Test-Suite", 
+    {# "Specification",  #}
+    {# "Test-Suite",  #}
     "Skipped", 
     "Matched", 
     "Unmatched"
 ];
 var yValues = [
-    {{ suite['spec_statements']['count'] }}, 
-    {{suite['suite_statements']['count']}}, 
+    {# {{ suite['spec_statements']['count'] }},  #}
+    {# {{suite['suite_statements']['count']}},  #}
     {{suite['skipped_statements']['count']}}, 
     {{suite['matches']['count']}}, 
     {{suite['unmatched_spec_statements']['count']}}
 ];
 var barColors = [
-  "#b91d47",
-  "#00aba9",
+  {# "#b91d47", #}
+  {# "#00aba9", #}
   "#2b5797",
   "#e8c3b9",
   "#1e7145"
