@@ -19,10 +19,10 @@ class Settings(BaseSettings):
     }
     SUITE_TO_SPEC_MAPPINGS: dict = {
         "vc-data-model-2.0-test-suite": ["vc-data-model-2.0"],
-        # "vc-bitstring-status-list-test-suite": ["vc-bitstring-status-list"],
+        "vc-bitstring-status-list-test-suite": ["vc-bitstring-status-list"],
         # "vc-di-ecdsa-test-suite": ["vc-di-ecdsa"],
-        # "vc-di-eddsa-test-suite": ["vc-data-integrity", "vc-di-eddsa"],
-        # "vc-di-bbs-test-suite": ["vc-data-integrity", "vc-di-bbs"],
+        "vc-di-eddsa-test-suite": ["vc-di-eddsa"],
+        # "vc-di-bbs-test-suite": ["vc-di-bbs"],
     }
 
 
