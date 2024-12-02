@@ -42,7 +42,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="row g-2 align-items-center">
-                                    <canvas id="{{ suite['suite'] }}" style="width:100%;max-width:600px"></canvas>
+                                    <canvas id="{{ suite['suite'] }}" style="width:50%;max-width:300px"></canvas>
                                     <script>
                                         var xValues = [
                                             "Skipped",
@@ -68,12 +68,6 @@
                                                     backgroundColor: barColors,
                                                     data: yValues
                                                 }]
-                                            },
-                                            options: {
-                                                title: {
-                                                    display: true,
-                                                    text: "{{ suite['suite'] }}"
-                                                }
                                             }
                                         });
                                     </script>
