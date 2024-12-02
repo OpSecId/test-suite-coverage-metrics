@@ -25,7 +25,7 @@
                 <div class="row g-2 align-items-center">
                     <div class="col">
                         <h2 class="page-title">
-                            Charts
+                            W3C VC Test Suites Coverage Metrics
                         </h2>
                     </div>
                 </div>
@@ -52,8 +52,8 @@
                                             ];
                                             var yValues = [
                                                 {{ suite['skipped_statements']['count'] }},
-                                                {{ suite['matches']['count'] }},
-                                                {{ suite['unmatched_spec_statements']['count'] }}
+                                            { { suite['matches']['count'] } },
+                                            { { suite['unmatched_spec_statements']['count'] } }
     ];
                                             var barColors = [
                                                 "#b91d47",
@@ -85,7 +85,20 @@
                                                 </h2>
                                                 <div id="collapse-unmatched" class="accordion-collapse collapse"
                                                     data-bs-parent="#accordion-example" style="">
-                                                    <div class="accordion-body pt-0"></div>
+                                                    <div class="accordion-body pt-0">
+                                                        <div class="list-group list-group-flush list-group-hoverable">
+                                                            {% for item in suite['unmatched_spec_statements']['list'] %}
+                                                            <div class="list-group-item">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col text-truncate">
+                                                                        <div class="text-reset d-block">{{ item }}</a>
+                                                                        {# <div class="d-block text-secondary text-truncate mt-n1"></div> #}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            {% endfor %}
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -100,7 +113,20 @@
                                                 </h2>
                                                 <div id="collapse-skipped" class="accordion-collapse collapse"
                                                     data-bs-parent="#accordion-example" style="">
-                                                    <div class="accordion-body pt-0"></div>
+                                                    <div class="accordion-body pt-0">
+                                                        <div class="list-group list-group-flush list-group-hoverable">
+                                                            {% for item in suite['skipped_statements']['list'] %}
+                                                            <div class="list-group-item">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col text-truncate">
+                                                                        <div class="text-reset d-block">{{ item['statement'] }}</a>
+                                                                        <div class="d-block text-secondary text-truncate mt-n1">Reason: {{ item['reason'] }}</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            {% endfor %}
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

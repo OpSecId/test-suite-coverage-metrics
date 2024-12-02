@@ -36,6 +36,13 @@ def run():
         coverage_metrics = TestSuiteAnalyser().derive_metrics(matched_statements, suite_statements, spec_statements)
         
         
+        for spec in settings.SUITE_TO_SPEC_MAPPINGS[suite]:
+            skipped_statements = SKIPPED_STATEMENTS[spec]
+            coverage_metrics['skipped_statements'] = {
+                'count': len(skipped_statements),
+                'list': skipped_statements
+            }
+        
         coverage_metrics['suite'] = suite
         coverage_metrics['unmatched_suite_statements'] = {
             'count': len(suite_statements_copy),
@@ -44,10 +51,6 @@ def run():
         coverage_metrics['unmatched_spec_statements'] = {
             'count': len(spec_statements_copy),
             'list': spec_statements_copy
-        }
-        coverage_metrics['skipped_statements'] = {
-            'count': len(SKIPPED_STATEMENTS),
-            'list': SKIPPED_STATEMENTS
         }
         suites.append(coverage_metrics)
         template = JinjaReporter().render_template('coverage_metrics', coverage_metrics)
